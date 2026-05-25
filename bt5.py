@@ -19,7 +19,7 @@ while True:
                 core_data = seperate_data[i].split("-")
                 prod_id = core_data[0].strip().upper()
                 nati_id = core_data[1].strip().upper()
-                cre_year = core_data[2].strip()
+                cre_year = "20" + core_data[2].strip()
                 seri_num = core_data[3].strip()
                 if seri_num.isalpha():
                     print(f"{prod_id} | {nati_id} | {cre_year} | {seri_num} | Reject")
@@ -35,7 +35,7 @@ while True:
                 core_data = seperate_data[i].split("-")
                 prod_id = core_data[0].strip().upper()
                 nati_id = core_data[1].strip().upper()
-                cre_year = core_data[2].strip()
+                cre_year ="20" +core_data[2].strip()
                 seri_num = core_data[3].strip()
                 if search_id == seri_num:
                     if seri_num.isalpha():
